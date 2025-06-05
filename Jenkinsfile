@@ -7,7 +7,7 @@ pipeline {
             }
         }
         stage('Sonarcube') {
-            step {
+            steps {
                 sh """
                 sonar-scanner \
                 -Dsonar.projectKey=jocelyn-td-frontend \
